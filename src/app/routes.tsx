@@ -6,6 +6,7 @@ import { Shelf } from "./components/pages/Shelf";
 import { Annotations } from "./components/pages/Annotations";
 import { BookReader } from "./components/pages/BookReader";
 import { AudiobookPlayer } from "./components/pages/AudiobookPlayer";
+import { DesignLab } from "./components/pages/DesignLab";
 
 export const router = createBrowserRouter([
   {
@@ -25,5 +26,9 @@ export const router = createBrowserRouter([
   {
     path: "/audiobook/:id",
     Component: AudiobookPlayer,
+  },
+  {
+    path: "/design-lab",
+    Component: DesignLab,
   },
 ]);
